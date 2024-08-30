@@ -1,5 +1,7 @@
 #!/bin/sh
 
+shell_name=$0
+
 required_vars="dataPath qcowPath diskSize diskSizeUnit"
 
 run_command() {
@@ -28,7 +30,7 @@ contains_element() {
   for item in ${required_vars}; do
     if [ "--$item" = "$value_to_check" ]; then
       found=1
-      break
+      continue
     fi
   done
   return $found
@@ -54,15 +56,15 @@ while [ $# -gt 0 ]; do
 
   if [ "$arg" = "--" ]; then
     shift
-    break
+    continue
   fi
 
   contains_element $arg
 
   if [ $? -eq 1 ]; then
     export "${arg#*--}=$2"
-    shift 2
   fi
+  shift 2
 done
 
 check_param
