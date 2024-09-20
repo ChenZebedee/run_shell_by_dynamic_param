@@ -1,0 +1,34 @@
+{
+  "AK": "dev",
+  "SK": "dev",
+  "SN": "64c02b74-924d-48e8-b955-0911744b31d4",
+  "LogFile": "/opt/nm/logs/python.log",
+  "LatestVersion": "22",
+  "GetLatestUrl": "http://172.21.3.78:9993/gateways/api/resources/cmd/getLatest",
+  "getAllPythonZipPackageUrl": "http://172.21.3.78:9993/gateways/api/resources/cmd/getAllShellZipPackage",
+  "AutoUpdateShell": {
+    "LatestVersion": "73",
+    "ShellZipPackageDir": "/opt/nm/",
+    "ShellDir": "/opt/nm/shell",
+    "GetLatestUrl": "http://172.21.3.78:9993/gateways/api/resources/cmd/getLatest",
+    "getAllShellZipPackageUrl": "http://172.21.3.78:9993/gateways/api/resources/cmd/getAllShellZipPackage",
+    " ": ""
+  },
+  "AutoReport": {
+    "ReportUrl": "http://172.21.3.78:9993/gateways/api/resources/cmd/reportSave",
+    "appKey": "4a8efed40acf1abcba7d98e5cb883672",
+    "nodeType": "docker",
+    "roomName": "\u534e\u4e1cD\u533a",
+    "type": "nm_report",
+    "event": "False",
+    "sync": "False",
+    "serialNumber": "64c02b74-924d-48e8-b955-0911744b31d4"
+  },
+  "AutoPull": {
+    "ShellZipPackageDir": "/opt/nm/",
+    "ShellDir": "/opt/nm/shell",
+    "GetLatestUrl": "http://172.21.3.78:9993/gateways/api/resources/cmd/pull",
+    " ": ""
+  },
+  "serialNumber": "64c02b74-924d-48e8-b955-0911744b31d4"
+}
